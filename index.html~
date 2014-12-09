@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>SB CV</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
@@ -17,6 +18,7 @@
 		</div>
 		
 		<div class="details">
+		<hr>
 			<h2>Personal Details</h2><br>
 			<ul>
 			 <li>Name : Sanjeev Budha</li><br>
