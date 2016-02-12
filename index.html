@@ -1,20 +1,310 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sanjeev Budha</title>
-  </head>
-  
-  <body>
-    <div>
-      <h1 style="color:#666362">Himalayas</h1>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sanjeev Budha</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+    .container{
+    	margin-top: 1%;
+    }
+    </style>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+            $("#education").hide();
+            $("#skills").hide();
+            $("#projects").hide();
+            $("#personalDetails").show();
+        });
+
+        function changeTab(id){
+
+            if(id == 1){
+                $("#education").hide();
+	            $("#skills").hide();
+	            $("#projects").hide();
+	            $("#personalDetails").show();
+            }
+            if(id == 2){
+                $("#education").show();
+	            $("#skills").hide();
+	            $("#projects").hide();
+	            $("#personalDetails").hide();
+
+            }
+            if(id == 3){
+                $("#education").hide();
+	            $("#skills").show();
+	            $("#projects").hide();
+	            $("#personalDetails").hide();
+            }
+            if(id == 4){
+                $("#education").hide();
+	            $("#skills").hide();
+	            $("#projects").show();
+	            $("#personalDetails").hide();
+
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color:rgb(208, 212, 218)">
+<div class="container">
+	
+	<div class="jumbotron" style="background-image:url(images/cover.jpg)">
+		<img src="images/sanjeevbudha.jpg" class="img-circle" width="200" height="150">
+	</div>
+
+	<div class="navbar ">
+        <button class="btn btn-primary btn-lg" role="button" id="btn1" onclick="changeTab(1);">
+        <span class="glyphicon glyphicon-user"></span>Personal Details</button>
+
+        <button class="btn btn-primary btn-lg" role="button" id="btn2" onclick="changeTab(2)">
+        <span class="glyphicon glyphicon-education"></span>Education</button>
+
+        <button class="btn btn-primary btn-lg" role="button" id="btn3" onclick="changeTab(3)">
+        <span class="glyphicon glyphicon-flag"></span>Skills</button>
+
+        <button class="btn btn-primary btn-lg" role="button" id="btn4" onclick="changeTab(4)">
+        <span class="glyphicon glyphicon-blackboard"></span>Projects</button>
+
+       <!--  <button class="btn btn-primary btn-lg" role="button" id="btn5" onclick="changeTab(5)">
+        <span class="glyphicon glyphicon-phone-alt"></span>Contact</button> -->
     </div>
-    
-    <div>
-      <h1 style="color:green">Hills</h1>
-    </div>
-    
-    <div>
-      <h1 style="color:yellow">Terai</h1>
-    </div>
-  </body>
+
+    <div class="jumbotron" id="personalDetails">
+    	<h3><b>Personal Details</b></h3>
+    	<hr>
+    	<div class="form-group">
+    		<label>Full Name:</label>
+    		<label>Sanjeev Budha</label>
+  		</div>
+
+  		<div class="form-group">
+    		<label>Permanent Address:</label>
+    		<label>Surkhet, Nepal</label>
+  		</div>
+
+  		<div class="form-group">
+    		<label>Temporary Address:</label>
+    		<label>Kathmandu, Nepal</label>
+  		</div>
+
+  		<div class="form-group">
+    		<label>Mobile Number:</label>
+    		<label>(+977)9843723195</label>
+  		</div>
+
+  		<div class="form-group">
+    		<label>Email Address:</label>
+    		<label>budhasanjeev@gmail.com</label>
+  		</div>
+
+  		<div class="form-group">
+    		<label>Marital Status:</label>
+    		<label>Single</label>
+  		</div>
+
+  		<div class="form-group">
+    		<label>Nationality:</label>
+    		<label>Nepalese</label>
+  		</div>
+	</div>
+
+	<div class="jumbotron" id="education">
+		
+		<h3><b>Education Details</b></h3>
+    	<hr>
+    	<table class="table">
+    		<thead>
+    			<tr>
+    				<th>Examination</th>
+    				<th>Board/University</th>
+    				<th>Passed Year(B.S)</th>
+    				<th>Roll Number</th>
+    				<th>Marks Obtained</th>
+    				<th>Percentage</th>
+    				<th>Division</th>
+    			</tr>
+    		</thead>
+
+    		<tbody>
+    			<tr>
+    				<td>S.L.C</td>
+    				<td>Nepal Government</td>
+    				<td>2066</td>
+    				<td>04178696 Q</td>
+    				<td>653</td>
+    				<td>81.63</td>
+    				<td>First</td>
+    			</tr>
+
+    			<tr>
+    				<td>Intermediate</td>
+    				<td>HSEB</td>
+    				<td>2069</td>
+    				<td>24000059</td>
+    				<td>703</td>
+    				<td>70.30</td>
+    				<td>First</td>
+    			</tr>
+
+    			<tr>
+    				<td>Bachelor</td>
+    				<td>TU</td>
+    				<td>TBD</td>
+    				<td>TBD</td>
+    				<td>TBD</td>
+    				<td>TBD</td>
+    				<td>TBD</td>
+    			</tr>
+
+    		</tbody>
+    	</table>
+
+    	<b>Note: Currently Studying B.Sc.CSIT</b>
+	</div>
+
+	<div class="jumbotron" id="skills">
+		<h3><b>Skills Acquired</b></h3>
+    	<hr>
+    	<div class="form-group">
+    		<label>HTML</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+			    	80% Complete
+			  	</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+    		<label>CSS</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+			    	70% Complete
+			  	</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+    		<label>JavaScript</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+			    	50% Complete
+			  	</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+    		<label>Java Basics</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+			    	70% Complete
+			  	</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+    		<label>JSP</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+			    	50% Complete
+			  	</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+    		<label>Java Servlet</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+			    	55% Complete
+			  	</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+    		<label>Grails</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+			    	60% Complete
+			  	</div>
+			</div>
+		</div>	
+
+		<div class="form-group">
+    		<label>Bootstrap</label>
+    		<div class="progress">
+			  	<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+			  		aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+			    	70% Complete
+			  	</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="jumbotron" id="projects">
+
+		<h3><b>Projects</b></h3>
+    	<hr>
+		
+		<div class="panel panel-primary">
+
+			<div class="panel-heading"><h4><b>HCPHUB Information System</b></h4></div>
+			
+			<div class="panel-body">
+				<p>July 2014</p>
+			<article>
+				HCPHUB is Information Management System. HCPHUB manages invoices information. HCPHUB provide features like Event Creation and Request Creation. Event's expenses, attendees information are stored. HCPHUB has three different users  :- Vendor, Admin and Normal User
+			</article>
+			</div>
+			
+		</div>
+
+		<div class="panel panel-success">
+
+			<div class="panel-heading"><h4><b>Rastriya Samachar Samiti (RSS) </b></h4></div>
+			
+			<div class="panel-body">
+				<p>November 2015</p>
+			<article>
+				The National News Agency (RSS), having nationwide network, is the largest and longest serving news agency in Nepal. It was established in 2018 BS under the Rastriya Samachar Samiti Act, 2019 BS, merging two privately owned news agencies with a view to facilitating newspapers and broadcast media. With the development of news media in Nepal, subscribers of RSS have so far reached more than 100 newspapers, radios, online media, and televisions. A pool of permanent and stringer reporters scattering throughout the country contribute to the news service and photo file every day. 
+			</article>
+
+			<b>Visit URL :- rss.com.np</b>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<!-- <div class="jumbotron" id="Contact">
+		
+		<h3><b>Contact</b></h3>
+    	<hr>
+		<div class="form-group">  	
+    		<label>Facebook</label>
+    		<
+		</div>
+	</div> -->
+
+	<footer>&copy Sanjeev Budha 2016</footer>
+</div>
+</body>
 </html>
