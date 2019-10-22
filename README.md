@@ -1,4 +1,5 @@
-sanjeevbudhamagar.github.io
+budhasanjeev.github.io
 ===========================
 
-Hello All, This is my Portfolio. 
+Namaste, 
+This is my resume. I'm trying to run it as a tech blog. (coming soon) 
