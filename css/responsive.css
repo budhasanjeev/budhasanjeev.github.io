@@ -66,10 +66,10 @@
 		height: 100%;
 	}
 	.home_banner_area .banner_inner .banner_content .media .media-body {
-		margin-top: 30px;
+		margin-top: 0px;
 	}
 	.home_banner_area .box_1620 {
-		bottom: -130px;
+		bottom: -30px;
 	}
 	.profile_inner .personal_text {
 		padding-left: 0px;
