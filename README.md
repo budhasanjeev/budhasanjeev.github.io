@@ -1,1 +1,7 @@
-This is my resume.
+### Resume/CV
+
+* Personal Information
+```
+Name: Sanjeev Budha
+Interest: Studying, Traveling
+```
