@@ -1,0 +1,10 @@
+.content {
+    align-content: center;
+}
+
+.content img {
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    width: 30%;
+}
